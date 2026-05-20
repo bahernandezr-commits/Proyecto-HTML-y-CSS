@@ -320,12 +320,7 @@ header img:hover {
     }
 
     footer {
-        height: 30px;
-    }
-
-    footer p {
-        font-size: 10px;
-        padding: auto;
+        height: 50px;
     }
 
     /*Tamaños de fuentes*/
@@ -369,9 +364,8 @@ header img:hover {
     }
 
     footer img {
-        height: 25px;
+        height: 20px;
         float: left;
-        padding: 3px;
     }
 }
 
@@ -400,8 +394,10 @@ header img:hover {
     }
 
     footer p {
-        font-size: 30px;
+        font-size: 20px;
+        padding: 3px;
     }
+
     /*Tamaños de fuentes*/
     h1 {
         font-size: 17px;
@@ -442,11 +438,10 @@ header img:hover {
         -webkit-border-radius: 17px 0 17px 0;
     }
 
-    }
-
     footer img{
         height: 35px;
         float: left;
         padding: 3px;
     }
 }
+
