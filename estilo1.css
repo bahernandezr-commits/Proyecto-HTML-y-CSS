@@ -323,6 +323,11 @@ header img:hover {
         height: 30px;
     }
 
+    footer p {
+        font-size: 10px;
+        padding: auto;
+    }
+
     /*Tamaños de fuentes*/
     h1 {
         font-size: 17px;
@@ -338,8 +343,10 @@ header img:hover {
         margin-top: 5%;
     }
 
-    header img{
-        height: auto;
+    header img {
+        height: 45px;
+        float: right;
+        padding: 3px;
     }
 
     p {
@@ -360,9 +367,86 @@ header img:hover {
         -moz-border-radius: 17px 0 17px 0;
         -webkit-border-radius: 17px 0 17px 0;
     }
+
+    footer img {
+        height: 25px;
+        float: left;
+        padding: 3px;
+    }
 }
 
 /*Para resoluciones hasta 700px*/
 @media screen and (max-width: 700px) {
 
+    div.contenedor {
+        width: 100%
+    }
+
+    header,nav, section, footer, article {
+        float: left;
+        width: 95%;
+        margin-left: 3%;
+        margin-top: 3%;
+        margin-bottom: 3%;
+        padding: 2%;
+    }
+
+    header {
+        height: 80px;
+    }
+
+    footer {
+        height: 60px;
+    }
+
+    footer p {
+        font-size: 30px;
+    }
+    /*Tamaños de fuentes*/
+    h1 {
+        font-size: 17px;
+        text-shadow: 0 0 0; /*eliminar la sombra*/
+    }
+
+    h2 {
+        font-size: 14px;
+    }
+
+    header h1 {
+        font-size: 40px;
+        margin-top: 5%;
+    }
+
+    header img{
+        height: 60px;
+        float: right;
+        padding: 0px;
+    }
+
+    p {
+        font-size: 13px;
+        line-height: 1.2em;
+    }
+    /*Botones*/
+    li a {
+        font-size: 0.9em;
+        margin-top: 0;
+        margin-left: 2px;
+        float: left;
+        width: 21%;
+        padding: 2px 4px;
+        margin-bottom: 3px;
+
+        /*Borde redondeado en esquinas opuestas*/
+        -moz-border-radius: 17px 0 17px 0;
+        -webkit-border-radius: 17px 0 17px 0;
+    }
+
+    }
+
+    footer img{
+        height: 35px;
+        float: left;
+        padding: 3px;
+    }
 }
