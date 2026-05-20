@@ -1,0 +1,26 @@
+body {
+    margin-left: 350px;
+    margin-right: 350px;
+}
+header {
+    background-color: gray;
+    text-align: center;
+}
+li {
+    border: 1px black solid;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+@font-face {
+    font-family: 'caviardreams_bolditalic-demo';
+    src: url('fuentes/caviardreams.woff2') format('woff2'),
+         url('fuentes/caviardreams.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; /* Mejora el rendimiento de carga */
+}
+
+h1, h2, p {
+    font-family: caviardreams_bolditalic-demo, Arial, Arial, Helvetica, sans-serif;
+}

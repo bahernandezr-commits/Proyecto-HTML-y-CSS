@@ -1,0 +1,368 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* -------------------Desde aquí comienza el código-------------------------------*/
+@font-face {
+    font-family: 'caviardreams_bolditalic-demo';
+    src: url('fuentes/caviardreams.woff2') format('woff2'),
+         url('fuentes/caviardreams.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; /* Mejora el rendimiento de carga */
+}
+div.contenedor {
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    height: 100%;
+    overflow: hidden;
+
+    background: rgba(204, 204, 204, .4);
+    border-radius: 5px 5px 10px 10px;
+
+    -webkit-box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.4), 0px 0px 15px rgba(204, 204, 204, 0.5);
+    -moz-box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.4), 0px 0px 15px rgba(204, 204, 204, 0.5);
+    box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.4), 0px 0px 15px rgba(204, 204, 204, 0.5);
+}
+
+body {
+    line-height: 1;
+    /*background-color: white;*/
+    /*color: #333;*/
+
+    font: 16px/28px Georgia, 'Times New Roman', Times, serif;
+
+    /* Tomado de: http://lea.verou.me/demos/css3-patterns.html */
+    background-color: #eee; /* Change this to change both stripe colors */
+
+    background-image: -webkit-gradient(linear, 0 100%, 100% 0,
+        color-stop(.25, rgba(255, 255, 255, .2)), color-stop(.25, transparent),
+        color-stop(.5, transparent), color-stop(.5, rgba(255, 255, 255, .2)),
+        color-stop(.75, rgba(255, 255, 255, .2)), color-stop(.75, transparent),
+        to(transparent)); /* Old webkit syntax */
+
+    background-image: -webkit-linear-gradient(45deg,
+        rgba(255, 255, 255, .2) 25%, transparent 25%,
+        transparent 50%, rgba(255, 255, 255, .2) 50%,
+        rgba(255, 255, 255, .2) 75%, transparent 75%, transparent); /* New webkit syntax */
+
+    background-image: -moz-linear-gradient(45deg,
+        rgba(255, 255, 255, .2) 25%, transparent 25%,
+        transparent 50%, rgba(255, 255, 255, .2) 50%,
+        rgba(255, 255, 255, .2) 75%, transparent 75%, transparent); /* Firefox */
+
+    background-image: -o-linear-gradient(45deg,
+        rgba(255, 255, 255, .2) 25%, transparent 25%,
+        transparent 50%, rgba(255, 255, 255, .2) 50%,
+        rgba(255, 255, 255, .2) 75%, transparent 75%, transparent); /* Opera */
+
+    background-image: linear-gradient(45deg,
+        rgba(255, 255, 255, .2) 25%, transparent 25%,
+        transparent 50%, rgba(255, 255, 255, .2) 50%,
+        rgba(255, 255, 255, .2) 75%, transparent 75%, transparent); /* W3C */
+
+    background-size: 16px 16px;
+}
+
+header, nav, section, article, footer {
+    border-radius: 10px;
+    padding: 15px;
+    /*border: solid 2px black;*/
+    margin-top: 10px;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+header {
+    height: 160px;
+    /*width: 100%;*/
+    float: center;
+    background-color:  #efe3d0;
+    overflow: hidden;
+}
+
+nav {
+    width: 36%;
+    float: left;
+    background-color:   #bebca5;
+    margin-left: 10px;
+    color: #b34f4f;
+}
+
+section {
+    /*height 500px*/
+    width: 62%;
+    float: right;
+    background-color:   #b6544e;
+    overflow: hidden;
+}
+
+section h1 {
+    color: #d9c0b2;
+}
+
+footer {
+    height: 60px;
+    width: 100%;
+    float: left;
+    background-color:   #bebca5;
+    overflow: hidden    ;
+    color: #b34f4f;
+}
+
+header, footer, article {
+    margin-bottom: 10px;
+}
+
+article {
+    /*height: 30px*/
+    width: 90%;
+    float: center;
+    background-color: #efe3d0 ;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article h2 {
+    color: #b34f4f;
+}
+
+h1, h2, p {
+    font-family: 'caviardreams_bolditalic-demo', sans-serif;
+    
+}
+
+header h1 {
+    font: bold;
+    font-size: 4.5em;
+    margin-top: 5%;
+    float: left;
+    font-family: 'caviardreams_bolditalic-demo', 'Helv';
+    font-weight: 30px;
+    color: #b34f4f;
+    text-shadow: 0 5px 0 #fff;
+    letter-spacing: -3px;
+}
+
+h1 {
+    font-size: 32px;
+    text-shadow: 0 2px 0 #fff;
+}
+
+h2 {
+    font-size: 26px;
+}
+header img {
+    height: 100%;
+    float: right;
+    margin-right: 5%;
+}
+
+footer img {
+    float: left;
+    height: 100%;
+    margin-right: 20%;
+}
+
+/*Navegacion*/
+li a {
+    display: inline-block;
+    font-size: 1.1em;
+    font-family: sans-serif;
+    padding: 5% 15%;
+    color: #668428;
+    margin-top: 7px;
+    width: 60%;
+    text-decoration: none;
+
+    /*fondo con gradiente*/
+    background: -moz-linear-gradient(center top, #cdeb8e 0%, #a5c956 100%) repeat scroll 0 0 transparent;
+    background: -webkit-gradient(linear, left top, left bottom,
+        color-stop(0%, #cdeb8e),
+        color-stop(100%, #a5c956)
+    );
+
+    /*borde redondeado en esquinas opuestas*/
+    -moz-border-radius: 20px 0 20px 0;
+    -webkit-border-radius: 20px 0 20px 0;
+    /*Sombreados*/
+    text-shadow: 1px 1px 1px #E1FEA6;
+    -moz-box-shadow: 0px 6px 0 #819F45;
+    -webkit-box-shadow: 0px 6px 0 #819F45;
+    margin-bottom: 5px;
+    }
+
+li a:hover {
+    /*Cambir bordes en esquinas opuestas*/
+    -moz-border-radius: 0 20px 0 20px;
+    -webkit-border-radius: 0 20px 0 20px;
+
+    /*Cambiar colores de fondo y sombra*/
+    background: -moz-linear-gradient(center top, #99ffcc 0%, #009966 100%) repeat scroll 0 0 transparent;
+
+    background: -webkit-gradient(linear, left top, left bottom,
+        color-stop(0%, #99ffcc),
+        color-stop(100%, #009966)
+    );
+
+    -moz-box-shadow: 0px 6px 0 #336666;
+    -webkit-box-shadow: 0px 6px 0 #336666;
+    }
+
+li a:active {
+
+    /*efecto de movimiento*/
+    position: relative;
+    top: 3px;
+
+    /*efecto de hundimiento*/
+    -moz-box-shadow: 0px 3px 0 #336666;
+    -webkit-box-shadow: 0px 3px 0 #336666;
+
+    /*invertir degradado*/
+    background: -moz-linear-gradient(center top, #009966 0%, #99ffcc 100%) repeat scroll 0 0 transparent;
+
+    background: -webkit-gradient(linear, left top, left bottom,
+        color-stop(0%, #009966),
+        color-stop(100%, #99ffcc)
+    );
+}
+
+header img {
+    float: right;
+    height: 100%;
+    margin-right: 5%;
+
+    /*define el retraso y la velocidad de cambios*/
+    -webkit-transition-delay: 0s;
+    -webkit-transition-duration: 2s;
+    -webkit-transition-property: all;
+}
+
+/*Para animar un poco el logo cuando se pasa el puntero sobre el*/
+header img:hover {
+
+    /*se cambian tres propiedades*/
+    height: 120%;
+    margin-right: 15%;
+
+    transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+}
+
+/*Para resoluciones hasta 480px*/
+@media screen and (max-width: 480px) {
+
+    div.contenedor {
+        width: 100%
+    }
+
+    header,nav, section, footer, article {
+        float: left;
+        width: 95%;
+        margin-left: 3%;
+        margin-top: 3%;
+        margin-bottom: 3%;
+        padding: 2%;
+    }
+
+    header {
+        height: 60px;
+    }
+
+    footer {
+        height: 30px;
+    }
+
+    /*Tamaños de fuentes*/
+    h1 {
+        font-size: 17px;
+        text-shadow: 0 0 0; /*eliminar la sombra*/
+    }
+
+    h2 {
+        font-size: 14px;
+    }
+
+    header h1 {
+        font-size: 18px;
+        margin-top: 5%;
+    }
+
+    header img{
+        height: auto;
+    }
+
+    p {
+        font-size: 13px;
+        line-height: 1.2em;
+    }
+    /*Botones*/
+    li a {
+        font-size: 0.9em;
+        margin-top: 0;
+        margin-left: 2px;
+        float: left;
+        width: 21%;
+        padding: 2px 4px;
+        margin-bottom: 3px;
+
+        /*Borde redondeado en esquinas opuestas*/
+        -moz-border-radius: 17px 0 17px 0;
+        -webkit-border-radius: 17px 0 17px 0;
+    }
+}
+
+/*Para resoluciones hasta 700px*/
+@media screen and (max-width: 700px) {
+
+}
